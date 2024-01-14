@@ -1,6 +1,6 @@
 SQL Schema
-Table: Sales
 
+Table: Sales
 +-------------+-------+
 | Column Name | Type  |
 +-------------+-------+
@@ -17,7 +17,6 @@ Note that the price is per unit.
  
 
 Table: Product
-
 +--------------+---------+
 | Column Name  | Type    |
 +--------------+---------+
@@ -29,12 +28,11 @@ Each row of this table indicates the product name of each product.
  
 
 Write a solution to report the product_name, year, and price for each sale_id in the Sales table.
-
 Return the resulting table in any order.
 
 The result format is in the following example.
 
- 
+
 
 Example 1:
 
@@ -47,6 +45,7 @@ Sales table:
 | 2       | 100        | 2009 | 12       | 5000  |
 | 7       | 200        | 2011 | 15       | 9000  |
 +---------+------------+------+----------+-------+
+
 Product table:
 +------------+--------------+
 | product_id | product_name |
@@ -55,6 +54,7 @@ Product table:
 | 200        | Apple        |
 | 300        | Samsung      |
 +------------+--------------+
+
 Output: 
 +--------------+-------+-------+
 | product_name | year  | price |
@@ -63,7 +63,16 @@ Output:
 | Nokia        | 2009  | 5000  |
 | Apple        | 2011  | 9000  |
 +--------------+-------+-------+
+
 Explanation: 
 From sale_id = 1, we can conclude that Nokia was sold for 5000 in the year 2008.
 From sale_id = 2, we can conclude that Nokia was sold for 5000 in the year 2009.
 From sale_id = 7, we can conclude that Apple was sold for 9000 in the year 2011.
+
+
+Solution:
+
+SELECT product_name, year, price 
+FROM sales
+LEFT JOIN product
+USING(product_id)
