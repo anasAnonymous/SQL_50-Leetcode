@@ -1,6 +1,7 @@
 SQL Schema
-Table: Employees
 
+
+Table: Employees
 +---------------+---------+
 | Column Name   | Type    |
 +---------------+---------+
@@ -12,7 +13,6 @@ Each row of this table contains the id and the name of an employee in a company.
  
 
 Table: EmployeeUNI
-
 +---------------+---------+
 | Column Name   | Type    |
 +---------------+---------+
@@ -24,12 +24,11 @@ Each row of this table contains the id and the corresponding unique id of an emp
  
 
 Write a solution to show the unique ID of each user, If a user does not have a unique ID replace just show null.
-
 Return the result table in any order.
 
-The result format is in the following example.
 
- 
+
+The result format is in the following example.
 
 Example 1:
 
@@ -44,6 +43,7 @@ Employees table:
 | 90 | Winston  |
 | 3  | Jonathan |
 +----+----------+
+
 EmployeeUNI table:
 +----+-----------+
 | id | unique_id |
@@ -52,6 +52,7 @@ EmployeeUNI table:
 | 11 | 2         |
 | 90 | 3         |
 +----+-----------+
+
 Output: 
 +-----------+----------+
 | unique_id | name     |
@@ -62,11 +63,13 @@ Output:
 | 3         | Winston  |
 | 1         | Jonathan |
 +-----------+----------+
+
 Explanation: 
 Alice and Bob do not have a unique ID, We will show null instead.
 The unique ID of Meir is 2.
 The unique ID of Winston is 3.
 The unique ID of Jonathan is 1.
+
 
 
 Solution:
