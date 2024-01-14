@@ -1,8 +1,7 @@
 # SQL_50-Leetcode
 Crack SQL Interview in 50 Qs
 
-``Markdown
-
+```
 ## Introduction
 This repository is a collection of SQL questions from LeetCode that I'm solving to improve my SQL skills. Each question includes the table schema, a problem statement, and a SQL solution.
 
