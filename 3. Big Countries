@@ -1,6 +1,6 @@
 #SQL Schema
 
-##Table: World
+## Table: World
 
 +-------------+---------+
 | Column Name | Type    |
