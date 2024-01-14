@@ -1,6 +1,7 @@
 SQL Schema
-Table: Views
 
+
+Table: Views
 +---------------+---------+
 | Column Name   | Type    |
 +---------------+---------+
@@ -17,9 +18,8 @@ Note that equal author_id and viewer_id indicate the same person.
 Write a solution to find all the authors that viewed at least one of their own articles.
 Return the result table sorted by id in ascending order.
 
-The result format is in the following example.
 
- 
+The result format is in the following example.
 
 Example 1:
 
@@ -44,6 +44,7 @@ Output:
 | 4    |
 | 7    |
 +------+
+
 
 
 Solution:
